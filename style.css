@@ -78,13 +78,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.process-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;   /* This centers everything vertically */
-    flex-wrap: wrap;
-    gap: 15px;
-}
 
 .process-item {
     display: flex;
@@ -113,14 +106,31 @@
 }
 
 .arrow {
-    font-size: 28px;
-    color: #198754;
     display: flex;
-    align-items: center;   /* THIS fixes vertical misalignment */
-    animation: moveArrow 1.5s infinite alternate;
+    align-items: center;
+    justify-content: center;
+    height: 70px;   /* same height as circle */
+    font-size: 26px;
+    color: #198754;
+    animation: moveArrow 1.2s infinite alternate ease-in-out;
 }
+
+.arrow i {
+    text-shadow: 0 0 8px rgba(25, 135, 84, 0.6);
+}
+
+
+.process-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 
 @keyframes moveArrow {
     from { transform: translateX(0px); }
     to { transform: translateX(6px); }
 }
+
