@@ -39,3 +39,24 @@
     background-color: #1ebe5d;
     color: white;
 }
+.calculator-section {
+    background: linear-gradient(135deg, #0f9d58, #057a3f);
+}
+
+.calculator-card {
+    background: white;
+    border-radius: 15px;
+}
+
+.result-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
